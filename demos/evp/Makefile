@@ -9,7 +9,7 @@
 #    LD_LIBRARY_PATH=../.. ./aesgcm
 
 CFLAGS = $(OPENSSL_INCS_LOCATION)
-LDFLAGS = $(OPENSSL_LIBS_LOCATION) -lssl -lcrypto
+LDFLAGS = $(OPENSSL_LIBS_LOCATION) -lssl -lcrypto -ldl -lpthread
 
 all: aesccm aesgcm
 
